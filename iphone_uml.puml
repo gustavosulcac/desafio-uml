@@ -1,0 +1,24 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+interface ReprodutorMusical
+interface NavegadorInternet
+interface AparelhoTelefonico
+
+ReprodutorMusical <|-- Iphone11
+NavegadorInternet <|-- Iphone11
+AparelhoTelefonico <|-- Iphone11
+
+ReprodutorMusical : tocarMusica()
+ReprodutorMusical : pausarMusica()
+ReprodutorMusical : seleccionarMusica(String musica)
+
+NavegadorInternet : exibirPagina()
+NavegadorInternet : adicionarNovaAba()
+NavegadorInternet : atualizarPagina()
+
+AparelhoTelefonico : ligar()
+AparelhoTelefonico : atender()
+AparelhoTelefonico : iniciarCorreioVoz()
+
+@enduml
